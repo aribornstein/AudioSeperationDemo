@@ -36,5 +36,5 @@ if __name__ == '__main__':
 
     # Train for 1 epoch using a single GPU. If you're running this on Google Colab,
     # be sure to select a GPU runtime (Runtime → Change runtime type → Hardware accelarator).
-    trainer = Trainer(args.max_epochs=1, args.gpus=1)
+    trainer = Trainer(max_epochs=args.max_epochs, gpus=args.gpus)
     trainer.fit(system)
